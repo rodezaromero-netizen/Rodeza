@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ACT2&3</title>
+
+    <style>
+        body {
+            background-color: #f0f2f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 25px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #1a73e8;
+            border-bottom: 2px solid #e8f0fe;
+            padding-bottom: 10px;
+        }
+
+        hr {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="file"] {
+            margin-top: 5px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1558b0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Feedback Form</h2>
+    
+
+    <form action="submit.php" method="post">
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required>
+
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" required></textarea>
+
+        <label>Skills:</label><br>
+        <input type="checkbox" name="skills" value="HTML"> HTML<br>
+        <input type="checkbox" name="skills" value="CSS"> CSS<br>
+        <input type="checkbox" name="skills" value="JavaScript"> JavaScript
+        <br><br>
+
+        <label>Preferred Contact Method:</label><br>
+        <input type="radio" name="contact" value="Phone"> Phone<br>
+        <input type="radio" name="contact" value="Email"> Email<br>
+        <input type="radio" name="contact" value="Messenger"> Messenger
+        <br><br>
+
+        <label for="country">Country:</label><br>
+        <select id="country" name="country" required>
+            <option value="">Select Country</option>
+            <option>Pakistan</option>
+            <option>Thailand</option>
+            <option>New Zealand</option>
+            <option>Australia</option>
+            <option>Spain</option>
+        </select>
+
+        <label for="photo">Profile Picture:</label><br>
+        <input type="file" id="photo" name="photo" required>
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styling Activity</title>
+
+    <style>
+        /* 1. Paragraph styling */
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        /* 2. Link states */
+        a {
+            color: rgb(181, 32, 255);
+        }
+
+        a:hover {
+            color: rgb(55, 54, 54
+            );
+        }
+
+        a:visited {
+            color: rgb(55, 54, 54);
+        }
+
+        /* 3. Class selector */
+        .important {
+            background-color: rgb(163, 166, 191);
+            font-weight: bold;
+            padding: 5px;
+        }
+
+        /* 4. ID selector */
+        #main-heading {
+            color: rgb(29, 29, 51);
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        /* 5. Background colors and gradients */
+        .section-one {
+            background-color: rgb(103, 103, 106);
+            padding: 20px;
+        }
+
+        .section-two {
+            background: linear-gradient(to right, lightgreen, lightyellow);
+            padding: 20px;
+        }
+
+        /* 6. Box model */
+        .box {
+            padding: 20px;
+            border: 2px solid rgb(2, 2, 81);
+            margin: 20px 0;
+            background-color: white;
+            box-shadow: 5px 5px 10px rgba(70, 58, 58, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="main-heading"> Activity 3 CSS Basics</h1>
+
+    <div class="section-one">
+        <h2>CSS ACTIVITY</h2>
+
+        <p>
+            CSS stands for Cascading Style Sheets. It is used to design
+            and style webpages. CSS allows us to change colors, fonts,
+            spacing, backgrounds, borders, and the overall appearance
+            of HTML elements.
+            <hr>
+        </p>
+
+        <p class="important">
+            In CSS, we can use selectors to target specific HTML elements and apply styles to them. We can also use classes and IDs to create reusable styles.
+        </p>
+    </div>
+
+    <div class="section-two">
+        <h2>About CSS</h2>
+
+        <p>
+            The CSS box model is a fundamental concept in web design. It describes how the size of an element is calculated, including its content, padding, border, and margin.
+
+            <hr>
+
+        </p>
+
+        <p class="important">
+            Consistentsy in learning CSS is key to becoming proficient in web development. Practice regularly and explore different CSS properties to enhance your skills.
+        </p>
+
+        <p>
+            You can learn more about web development by visiting
+            <a href="https://developer.mozilla.org/" target="_blank">About CSS</a>.
+        </p>
+    </div>
+
+    <div class="box">
+        <h2>Box Model Example</h2>
+
+        <p>
+            This is the example of the CSS box model, which includes padding, border, and margin. The box model allows us to control the spacing and layout of elements on a webpage.
+        </p>
+    </div>
+
+</body>
+</html>
