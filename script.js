@@ -1,12 +1,5 @@
-function showMessage() {
-    let name = document.getElementById("name").value;
-    let age = document.getElementById("age").value;
+document.querySelector("form").addEventListener("submit", function(event) {
+    event.preventDefault();
 
-    if (name === "" || age === "") {
-        document.getElementById("message").innerHTML =
-            "Please enter your name and age.";
-    } else {
-        document.getElementById("message").innerHTML =
-            "Hello " + name + ", Welcome!!";
-    }
-}
+    alert("Form submitted successfully!");
+});

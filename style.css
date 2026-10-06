@@ -12,71 +12,63 @@ body {
     background: linear-gradient(135deg, #e9d5ff, #f8f5ff, #d8b4fe);
 }
 
-/* Main container */
 .container {
-    width: 420px;
+    width: 500px;
     padding: 40px;
-    background: rgba(255, 255, 255, 0.9);
+    background: white;
     border: 2px solid #c084fc;
     border-radius: 25px;
     box-shadow: 0 15px 40px rgba(126, 34, 206, 0.2);
-    text-align: center;
 }
 
-/* Welcome title */
 h1 {
+    text-align: center;
     color: #7e22ce;
-    font-size: 42px;
     margin-bottom: 30px;
 }
 
-/* Labels */
 label {
     display: block;
-    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 7px;
     color: #6b21a8;
     font-weight: bold;
-    margin-top: 18px;
-    margin-bottom: 8px;
 }
 
-/* Input boxes */
-input {
+input,
+textarea {
     width: 100%;
-    padding: 13px 16px;
+    padding: 13px;
     border: 2px solid #d8b4fe;
-    border-radius: 25px;
+    border-radius: 12px;
     outline: none;
     font-size: 16px;
-    color: #6b21a8;
-    background: #faf7ff;
+    font-family: Arial, sans-serif;
 }
 
-input:focus {
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+input:focus,
+textarea:focus {
     border-color: #9333ea;
-    box-shadow: 0 0 10px rgba(147, 51, 234, 0.2);
 }
 
-/* Submit button */
 button {
-    margin-top: 25px;
-    padding: 13px 45px;
+    display: block;
+    margin: 25px auto 0;
+    padding: 13px 50px;
     border: none;
-    border-radius: 30px;
+    border-radius: 25px;
     background: linear-gradient(135deg, #9333ea, #c084fc);
     color: white;
     font-size: 17px;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 0 8px 20px rgba(126, 34, 206, 0.25);
 }
 
 button:hover {
     transform: translateY(-2px);
-}
-
-/* Greeting */
-h2 {
-    color: #7e22ce;
-    margin-top: 30px;
 }

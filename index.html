@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>Contact Form</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,17 +12,28 @@
 
     <div class="container">
 
-        <h1>Welcome!</h1>
+        <h1>Contact Form</h1>
 
-        <label for="name">Enter your name:</label>
-        <input type="text" id="name" placeholder="Enter your name">
+        <form>
 
-        <label for="age">Enter your age:</label>
-        <input type="number" id="age" placeholder="Enter your age">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
 
-        <button onclick="showMessage()">Submit</button>
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" placeholder="Enter your address">
 
-        <h2 id="message"></h2>
+            <label for="contact">Contact #</label>
+            <input type="text" id="contact" name="contact" placeholder="Enter your contact number">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+
+            <button type="submit">Submit</button>
+
+        </form>
 
     </div>
 
